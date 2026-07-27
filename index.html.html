@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yuba Ravens Softball</title>
+  <style>
+    :root {
+      --crimson: #730227;
+      --crimson-bright: #c1121f;
+      --black: #111111;
+      --charcoal: #242424;
+      --soft-gray: #f4f4f4;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--charcoal);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--crimson);
+      color: var(--white);
+      padding: 55px 20px 70px;
+      text-align: center;
+    }
+
+    .site-logo {
+      display: block;
+      width: min(760px, calc(100vw - 40px));
+      height: auto;
+      margin: 0 auto 20px;
+      border-radius: 6px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.28);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: 15px auto 0;
+    }
+
+    nav {
+      background: var(--black);
+      padding: 12px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { color: var(--crimson-bright); }
+
+    section {
+      padding: 55px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: var(--crimson);
+      font-size: 2rem;
+      margin-top: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+      margin-top: 25px;
+    }
+
+    .card {
+      background: var(--soft-gray);
+      border-left: 6px solid var(--crimson);
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--black);
+    }
+
+    .contact-president {
+      grid-column: 1 / -1;
+    }
+
+    .highlight {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .highlight h2, .highlight h3 { color: var(--white); }
+    .highlight .card {
+      background: rgba(255,255,255,0.08);
+      border-color: var(--crimson-bright);
+      color: var(--white);
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--crimson-bright);
+      color: var(--white);
+      padding: 13px 22px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .button:hover { background: var(--crimson); }
+
+    .social-link {
+      margin-top: 24px;
+    }
+
+    ul { padding-left: 20px; }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 0.95rem;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 36px 20px 55px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="site-logo" src="yuba-ravens-logo.png" alt="Yuba Ravens Fastpitch logo" />
+    <p>Travel softball serving the Yuba City, Olivehurst, and surrounding Yuba-Sutter area.</p>
+    <a class="button" href="#contact">Contact the Ravens</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#season">Season Info</a>
+    <a href="#tryouts">Tryouts</a>
+    <a href="#fundraising">Support</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.facebook.com/people/Yuba-Ravens/100093410423105/" target="_blank" rel="noopener noreferrer">Facebook</a>
+  </nav>
+
+  <section id="about">
+    <div class="container">
+      <h2>About the Program</h2>
+      <p>
+        The Yuba Ravens are a competitive girls fastpitch travel softball organization focused on player development,
+        teamwork, accountability, and creating a positive environment for athletes who want to compete and grow.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3>Player Development</h3>
+          <p>Focused practices designed to build softball fundamentals, confidence, softball IQ, and competitive habits.</p>
+        </div>
+        <div class="card">
+          <h3>Team Culture</h3>
+          <p>Players are expected to work hard, support teammates, respect the game, and represent the Ravens with pride.</p>
+        </div>
+        <div class="card">
+          <h3>Local Roots</h3>
+          <p>Practices and team activities are based around the Yuba City and Olivehurst area.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="season" class="highlight">
+    <div class="container">
+      <h2>2026 Fall / Winter 10U Information</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Season Timeline</h3>
+          <p>Approximate start in August, tournaments from September through November, and winter training from December through January.</p>
+        </div>
+        <div class="card">
+          <h3>Practices</h3>
+          <p>Two practices per week, typically 2.5 to 3 hours each, in the Yuba City and Olivehurst area.</p>
+        </div>
+        <div class="card">
+          <h3>Tournaments</h3>
+          <p>Expected events include 4 to 5 Legacy and AST tournaments, plus local round robins when available.</p>
+        </div>
+        <div class="card">
+          <h3>Initial Cost</h3>
+          <p>$250 initial deposit due at the first meeting. This covers uniforms, helmets, and insurance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tryouts">
+    <div class="container">
+      <h2>Tryouts</h2>
+      <p>
+        The Ravens look for dedicated softball players who are coachable, hardworking, team-focused, and ready to compete.
+        Tryout details, dates, and paperwork information can be posted here as they are announced.
+      </p>
+      <ul>
+        <li>Player name, birth year, and primary positions</li>
+        <li>Parent/guardian contact information</li>
+        <li>Medical and emergency contact information</li>
+        <li>Softball experience and availability</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="fundraising" class="highlight">
+    <div class="container">
+      <h2>Fundraising & Sponsorships</h2>
+      <p>
+        Fundraising opportunities and community sponsorships help reduce overall season expenses for players and families.
+        As a registered 501(c)(3) nonprofit organization, the Ravens can accept sponsorship support and tax-deductible donations.
+      </p>
+      <a class="button" href="#contact">Ask About Sponsorships</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>10U Coaches</h3>
+          <p>Candice Flanagan<br>Phone: 530-237-4516</p>
+          <p>Aaron Marques</p>
+          <p>Crystal Millet</p>
+        </div>
+        <div class="card">
+          <h3>14U Coaches</h3>
+          <p>Coach names and phone numbers coming soon.</p>
+        </div>
+        <div class="card">
+          <h3>16U Coaches</h3>
+          <p>Coach names and phone numbers coming soon.</p>
+        </div>
+        <div class="card contact-president">
+          <h3>Gabe Ronquillo</h3>
+          <p>President Yuba Ravens Fast-pitch Softball</p>
+          <p>Phone: 530-237-7661</p>
+        </div>
+      </div>
+      <a class="button social-link" href="https://www.facebook.com/people/Yuba-Ravens/100093410423105/" target="_blank" rel="noopener noreferrer">Visit the Ravens on Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Yuba Ravens Softball. All rights reserved.</p>
+  </footer>
+</body>
+</html>
