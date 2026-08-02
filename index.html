@@ -1,291 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yuba Ravens Softball</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yuba Ravens competitive girls fastpitch softball in the Yuba-Sutter area.">
+  <title>Yuba Ravens Fastpitch</title>
   <style>
-    :root {
-      --crimson: #730227;
-      --crimson-bright: #c1121f;
-      --black: #111111;
-      --charcoal: #242424;
-      --soft-gray: #f4f4f4;
-      --white: #ffffff;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--charcoal);
-      background: var(--white);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--crimson);
-      color: var(--white);
-      padding: 55px 20px 70px;
-      text-align: center;
-    }
-
-    .site-logo {
-      display: block;
-      width: min(760px, calc(100vw - 40px));
-      height: auto;
-      margin: 0 auto 20px;
-      border-radius: 6px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.28);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: clamp(2.4rem, 6vw, 4.5rem);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-
-    header p {
-      font-size: 1.25rem;
-      max-width: 800px;
-      margin: 15px auto 0;
-    }
-
-    nav {
-      background: var(--black);
-      padding: 12px 20px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: var(--white);
-      text-decoration: none;
-      margin: 0 14px;
-      font-weight: bold;
-      font-size: 0.95rem;
-    }
-
-    nav a:hover { color: var(--crimson-bright); }
-
-    section {
-      padding: 55px 20px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    h2 {
-      color: var(--crimson);
-      font-size: 2rem;
-      margin-top: 0;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 22px;
-      margin-top: 25px;
-    }
-
-    .card {
-      background: var(--soft-gray);
-      border-left: 6px solid var(--crimson);
-      border-radius: 10px;
-      padding: 24px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: var(--black);
-    }
-
-    .contact-president {
-      grid-column: 1 / -1;
-    }
-
-    .highlight {
-      background: var(--black);
-      color: var(--white);
-    }
-
-    .highlight h2, .highlight h3 { color: var(--white); }
-    .highlight .card {
-      background: rgba(255,255,255,0.08);
-      border-color: var(--crimson-bright);
-      color: var(--white);
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--crimson-bright);
-      color: var(--white);
-      padding: 13px 22px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-top: 15px;
-    }
-
-    .button:hover { background: var(--crimson); }
-
-    .social-link {
-      margin-top: 24px;
-    }
-
-    ul { padding-left: 20px; }
-
-    footer {
-      background: var(--black);
-      color: var(--white);
-      text-align: center;
-      padding: 28px 20px;
-      font-size: 0.95rem;
-    }
-
-    .note {
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: 25px;
-    }
-
-    @media (max-width: 700px) {
-      header {
-        padding: 36px 20px 55px;
-      }
-    }
+    :root{--wine:#72001f;--wine2:#a30734;--ink:#17171a;--paper:#f7f4f1;--gold:#f1c84b;--white:#fff;--muted:#68666a;--max:1180px;--shadow:0 18px 55px rgba(20,12,15,.14)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Arial,Helvetica,sans-serif}img{max-width:100%;display:block}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.eyebrow{margin:0 0 10px;color:var(--wine2);font-weight:900;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase}.section-title{margin:0;font-size:clamp(2rem,5vw,4rem);line-height:1;text-transform:uppercase;letter-spacing:-.04em}.lead{max-width:760px;font-size:1.08rem;color:var(--muted)}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(20,18,20,.96);color:white;border-bottom:3px solid var(--wine2);backdrop-filter:blur(12px)}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.brand img{width:105px;height:44px;object-fit:contain;background:#fff;border-radius:3px}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a{text-decoration:none;font-weight:700;font-size:.9rem}.nav-links a:hover,.nav-links a:focus-visible{color:#ffbdcf}.nav-cta{padding:10px 16px;background:var(--wine2);border-radius:999px}.menu-toggle{display:none;border:0;background:transparent;color:white;font-size:1.6rem;cursor:pointer}
+    .hero{min-height:calc(100vh - 74px);display:grid;place-items:end start;position:relative;color:white;isolation:isolate;background:#1c1719 url('14u-champions.png') center 38%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(14,8,10,.92) 0%,rgba(14,8,10,.64) 48%,rgba(14,8,10,.12) 78%),linear-gradient(0deg,rgba(14,8,10,.7),transparent 55%)}.hero-content{padding:clamp(70px,12vw,150px) 0 72px;max-width:720px}.hero-kicker{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;padding:8px 14px;border:1px solid rgba(255,255,255,.4);border-radius:99px;font-weight:800;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;background:rgba(0,0,0,.25)}.hero-kicker:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(241,200,75,.16)}h1{margin:0;font-size:clamp(3.8rem,10vw,8.5rem);line-height:.82;letter-spacing:-.07em;text-transform:uppercase}.hero .script{display:block;margin-top:12px;color:#ffbdcf;font-size:clamp(1.15rem,2.3vw,1.65rem);font-style:italic;font-weight:700;letter-spacing:.02em}.hero p{max-width:590px;font-size:1.12rem;color:#f2ebee}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 22px;border:2px solid transparent;border-radius:5px;text-decoration:none;font-weight:900;text-transform:uppercase;letter-spacing:.06em;font-size:.83rem}.btn-primary{background:var(--wine2);color:white}.btn-primary:hover{background:#c00d46}.btn-ghost{border-color:rgba(255,255,255,.65);color:white;background:rgba(0,0,0,.18)}
+    .achievement{background:var(--wine);color:white}.achievement-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:stretch}.achievement-copy{padding:70px max(30px,7vw) 70px max(20px,calc((100vw - var(--max))/2))}.achievement-copy .eyebrow{color:#ffbdcf}.achievement-copy p{max-width:650px;color:#f7dfe7}.achievement-stats{display:flex;gap:32px;flex-wrap:wrap;margin-top:32px}.stat strong{display:block;font-size:2.2rem;line-height:1;color:var(--gold)}.stat span{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em}.achievement-image{min-height:440px;background:url('championship-award.png') center 37%/cover no-repeat}
+    section{padding:90px 0}.intro-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}.value{padding:24px;border-top:5px solid var(--wine);background:white;box-shadow:0 8px 28px rgba(30,22,25,.08)}.value-num{color:#b9b3b5;font-weight:900;font-size:.78rem}.value h3{margin:28px 0 8px;text-transform:uppercase}.value p{margin:0;color:var(--muted);font-size:.93rem}
+    .season{background:var(--ink);color:white}.season .eyebrow{color:#ffbdcf}.season-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:38px}.season-head p{max-width:520px;color:#c9c5c6}.info-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #3a3739}.info-card{padding:30px;border-right:1px solid #3a3739}.info-card:last-child{border:0}.info-card .icon{color:var(--gold);font-size:1.6rem}.info-card h3{text-transform:uppercase;margin:20px 0 10px}.info-card p{margin:0;color:#c9c5c6;font-size:.94rem}
+    .gallery-grid{display:grid;grid-template-columns:1.7fr 1fr;grid-template-rows:270px 270px;gap:14px;margin-top:38px}.gallery-grid figure{position:relative;margin:0;overflow:hidden;background:#ddd}.gallery-grid figure:first-child{grid-row:1/3}.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .45s}.gallery-grid figure:hover img{transform:scale(1.025)}.gallery-grid figcaption{position:absolute;inset:auto 0 0;padding:40px 18px 16px;color:white;font-weight:800;background:linear-gradient(transparent,rgba(0,0,0,.78))}
+    .support{background:var(--wine);color:white}.support-grid{display:grid;grid-template-columns:1fr auto;gap:60px;align-items:center}.support p{max-width:760px;color:#f8dfe8}.support .btn{background:white;color:var(--wine)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1.45fr;gap:65px;margin-top:42px}.contact-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.contact-card{padding:24px;background:white;box-shadow:0 8px 28px rgba(30,22,25,.08)}.contact-card:last-child{grid-column:1/-1;border-left:5px solid var(--wine)}.contact-card h3{margin:0 0 8px;text-transform:uppercase}.contact-card p{margin:0;color:var(--muted)}.contact-card a{color:var(--wine);font-weight:800}.tryout-box{padding:36px;background:#eae4e5;border-radius:3px}.tryout-box ul{columns:2;padding-left:20px}.tryout-box li{margin-bottom:8px}.tryout-box .btn{margin-top:12px;background:var(--ink);color:white}
+    footer{padding:40px 0;background:#0f0e10;color:#bcb7b9}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.footer-logo{width:180px;padding:8px;background:white;border-radius:3px}.footer-copy{text-align:right}.footer-copy a{color:white}
+    @media(max-width:900px){.nav-links{display:none;position:absolute;top:74px;left:0;right:0;flex-direction:column;align-items:stretch;padding:20px;background:#171719}.nav-links.open{display:flex}.menu-toggle{display:block}.achievement-grid,.intro-grid,.support-grid,.contact-grid{grid-template-columns:1fr}.achievement-copy{padding:60px 20px}.achievement-image{min-height:360px}.values{grid-template-columns:1fr}.info-grid{grid-template-columns:1fr 1fr}.info-card:nth-child(2){border-right:0}.info-card:nth-child(-n+2){border-bottom:1px solid #3a3739}.support-grid{gap:25px}.footer-inner{align-items:flex-start}}
+    @media(max-width:620px){.wrap{width:min(100% - 28px,var(--max))}.brand span{display:none}.hero{min-height:720px;background-position:59% center}.hero:before{background:linear-gradient(0deg,rgba(13,8,10,.95) 0%,rgba(13,8,10,.54) 72%,rgba(13,8,10,.15))}.hero-content{padding-bottom:48px}.info-grid{grid-template-columns:1fr}.info-card,.info-card:nth-child(2){border-right:0;border-bottom:1px solid #3a3739}.gallery-grid{display:block}.gallery-grid figure{height:280px;margin-bottom:12px}.gallery-grid figure:first-child{height:380px}.contact-list{grid-template-columns:1fr}.contact-card:last-child{grid-column:auto}.tryout-box ul{columns:1}.footer-inner{flex-direction:column}.footer-copy{text-align:left}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.gallery-grid img{transition:none}}
   </style>
 </head>
 <body>
-  <header>
-    <img class="site-logo" src="yuba-ravens-logo.png" alt="Yuba Ravens Fastpitch logo" />
-    <p>Travel softball serving the Yuba City, Olivehurst, and surrounding Yuba-Sutter area.</p>
-    <a class="button" href="#contact">Contact the Ravens</a>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#season">Season Info</a>
-    <a href="#tryouts">Tryouts</a>
-    <a href="#fundraising">Support</a>
-    <a href="#contact">Contact</a>
-    <a href="https://www.facebook.com/people/Yuba-Ravens/100093410423105/" target="_blank" rel="noopener noreferrer">Facebook</a>
+  <nav class="topbar" aria-label="Main navigation">
+    <div class="nav wrap">
+      <a class="brand" href="#top"><img src="yuba-ravens-logo.png" alt="Yuba Ravens Fastpitch"><span>Yuba Ravens</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links"><a href="#about">About</a><a href="#season">Season</a><a href="#champions">Champions</a><a href="#support">Support</a><a href="#contact">Contact</a><a class="nav-cta" href="https://www.facebook.com/people/Yuba-Ravens/100093410423105/" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
   </nav>
 
-  <section id="about">
-    <div class="container">
-      <h2>About the Program</h2>
-      <p>
-        The Yuba Ravens are a competitive girls fastpitch travel softball organization focused on player development,
-        teamwork, accountability, and creating a positive environment for athletes who want to compete and grow.
-      </p>
-      <div class="cards">
-        <div class="card">
-          <h3>Player Development</h3>
-          <p>Focused practices designed to build softball fundamentals, confidence, softball IQ, and competitive habits.</p>
-        </div>
-        <div class="card">
-          <h3>Team Culture</h3>
-          <p>Players are expected to work hard, support teammates, respect the game, and represent the Ravens with pride.</p>
-        </div>
-        <div class="card">
-          <h3>Local Roots</h3>
-          <p>Practices and team activities are based around the Yuba City and Olivehurst area.</p>
-        </div>
-      </div>
+  <header class="hero" id="top">
+    <div class="hero-content wrap">
+      <div class="hero-kicker">Yuba-Sutter’s travel softball family</div>
+      <h1>Play Fierce.<br>Fly Together.</h1>
+      <span class="script">Heart. Hustle. Ravens pride.</span>
+      <p>Competitive girls fastpitch rooted in player development, accountability, teamwork, and a love for the game.</p>
+      <div class="actions"><a class="btn btn-primary" href="#contact">Join the Ravens</a><a class="btn btn-ghost" href="#champions">Meet the team</a></div>
     </div>
-  </section>
+  </header>
 
-  <section id="season" class="highlight">
-    <div class="container">
-      <h2>2026 Fall / Winter 10U Information</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Season Timeline</h3>
-          <p>Approximate start in August, tournaments from September through November, and winter training from December through January.</p>
-        </div>
-        <div class="card">
-          <h3>Practices</h3>
-          <p>Two practices per week, typically 2.5 to 3 hours each, in the Yuba City and Olivehurst area.</p>
-        </div>
-        <div class="card">
-          <h3>Tournaments</h3>
-          <p>Expected events include 4 to 5 Legacy and AST tournaments, plus local round robins when available.</p>
-        </div>
-        <div class="card">
-          <h3>Initial Cost</h3>
-          <p>$250 initial deposit due at the first meeting. This covers uniforms, helmets, and insurance.</p>
-        </div>
-      </div>
+  <aside class="achievement" aria-label="Recent team achievement">
+    <div class="achievement-grid">
+      <div class="achievement-copy"><p class="eyebrow">A championship summer</p><h2 class="section-title">2026 Easton Classic Champions</h2><p>Our 14U Ravens brought home the Triple Crown Fastpitch title—an achievement powered by hard work, team-first play, and the families and coaches behind every inning.</p><div class="achievement-stats"><div class="stat"><strong>14U</strong><span>Champions</span></div><div class="stat"><strong>2026</strong><span>Easton Classic</span></div><div class="stat"><strong>1 Team</strong><span>One family</span></div></div></div>
+      <div class="achievement-image" role="img" aria-label="Coach holding 14U championship award"></div>
     </div>
-  </section>
+  </aside>
 
-  <section id="tryouts">
-    <div class="container">
-      <h2>Tryouts</h2>
-      <p>
-        The Ravens look for dedicated softball players who are coachable, hardworking, team-focused, and ready to compete.
-        Tryout details, dates, and paperwork information can be posted here as they are announced.
-      </p>
-      <ul>
-        <li>Player name, birth year, and primary positions</li>
-        <li>Parent/guardian contact information</li>
-        <li>Medical and emergency contact information</li>
-        <li>Softball experience and availability</li>
-      </ul>
-    </div>
-  </section>
+  <main>
+    <section id="about"><div class="wrap intro-grid"><div><p class="eyebrow">More than a team</p><h2 class="section-title">Built for the next play.</h2></div><div><p class="lead">The Yuba Ravens are a competitive girls fastpitch travel softball organization serving the surrounding Yuba-Sutter area. We create a positive environment for athletes who want to compete, improve, and grow together.</p><div class="values"><article class="value"><span class="value-num">01</span><h3>Development</h3><p>Purposeful practices that build fundamentals, confidence, softball IQ, and competitive habits.</p></article><article class="value"><span class="value-num">02</span><h3>Team Culture</h3><p>Work hard, support teammates, respect the game, and represent the Ravens with pride.</p></article><article class="value"><span class="value-num">03</span><h3>Local Roots</h3><p>Practices and team activities centered in the Yuba City and Olivehurst community.</p></article></div></div></div></section>
 
-  <section id="fundraising" class="highlight">
-    <div class="container">
-      <h2>Fundraising & Sponsorships</h2>
-      <p>
-        Fundraising opportunities and community sponsorships help reduce overall season expenses for players and families.
-        As a registered 501(c)(3) nonprofit organization, the Ravens can accept sponsorship support and tax-deductible donations.
-      </p>
-      <a class="button" href="#contact">Ask About Sponsorships</a>
-    </div>
-  </section>
+    <section class="season" id="season"><div class="wrap"><div class="season-head"><div><p class="eyebrow">Season information</p><h2 class="section-title">2026 Fall / Winter 10U</h2></div><p>Focused training, quality competition, and a supportive team experience for developing athletes.</p></div><div class="info-grid"><article class="info-card"><span class="icon">◆</span><h3>Timeline</h3><p>August start, tournaments September–November, and winter training December–January.</p></article><article class="info-card"><span class="icon">◆</span><h3>Practices</h3><p>Two practices per week, typically 2.5–3 hours, in the Yuba City and Olivehurst area.</p></article><article class="info-card"><span class="icon">◆</span><h3>Tournaments</h3><p>Four to five Legacy and AST events, plus local round robins when available.</p></article><article class="info-card"><span class="icon">◆</span><h3>Initial Cost</h3><p>$250 deposit at the first meeting, covering uniforms, helmets, and insurance.</p></article></div></div></section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>10U Coaches</h3>
-          <p>Candice Flanagan<br>Phone: 530-237-4516</p>
-          <p>Aaron Marques</p>
-          <p>Crystal Millet</p>
-        </div>
-        <div class="card">
-          <h3>14U Coaches</h3>
-          <p>Coach names and phone numbers coming soon.</p>
-        </div>
-        <div class="card">
-          <h3>16U Coaches</h3>
-          <p>Coach names and phone numbers coming soon.</p>
-        </div>
-        <div class="card contact-president">
-          <h3>Gabe Ronquillo</h3>
-          <p>President Yuba Ravens Fast-pitch Softball</p>
-          <p>Phone: 530-237-7661</p>
-        </div>
-      </div>
-      <a class="button social-link" href="https://www.facebook.com/people/Yuba-Ravens/100093410423105/" target="_blank" rel="noopener noreferrer">Visit the Ravens on Facebook</a>
-    </div>
-  </section>
+    <section id="champions"><div class="wrap"><p class="eyebrow">Ravens in action</p><h2 class="section-title">Earned together.</h2><p class="lead">Every medal tells a story of commitment, resilience, and teammates showing up for one another.</p><div class="gallery-grid"><figure><img src="14u-champions.png" alt="Yuba Ravens 14U team holding a championship banner"><figcaption>14U Triple Crown Series Champions</figcaption></figure><figure><img src="team-celebration.png" alt="Yuba Ravens players and coaches celebrating with medals"><figcaption>Celebrating the work</figcaption></figure><figure><img src="championship-award.png" alt="Coach holding the Easton Classic 14U Champions award"><figcaption>Easton Classic · July 25–26, 2026</figcaption></figure></div></div></section>
 
-  <footer>
-    <p>&copy; 2026 Yuba Ravens Softball. All rights reserved.</p>
-  </footer>
+    <section class="support" id="support"><div class="wrap support-grid"><div><p class="eyebrow">Back the flock</p><h2 class="section-title">Help our athletes compete.</h2><p>Fundraising and community sponsorships help reduce season expenses for players and families. Yuba Ravens Public Benefit Corporation is a registered 501(c)(3) private foundation and can accept sponsorship support and tax-deductible donations.</p></div><a class="btn" href="#contact">Ask about sponsorships</a></div></section>
+
+    <section id="contact"><div class="wrap"><p class="eyebrow">Get connected</p><h2 class="section-title">Ready to be a Raven?</h2><div class="contact-grid"><div class="tryout-box"><h3>Tryout information</h3><p>We look for coachable, hardworking, team-focused players who are ready to compete. When reaching out, please include:</p><ul><li>Player name</li><li>Birth year</li><li>Primary positions</li><li>Softball experience</li><li>Parent contact</li><li>Availability</li></ul><a class="btn" href="https://www.facebook.com/people/Yuba-Ravens/100093410423105/" target="_blank" rel="noopener">Message us on Facebook</a></div><div class="contact-list"><article class="contact-card"><h3>10U Coaches</h3><p>Candice Flanagan<br>Aaron Marques<br>Crystal Millet</p></article><article class="contact-card"><h3>14U &amp; 16U Coaches</h3><p>Gabriel Ronquillo<br>Erik Rodriguez<br>Kris Kramer<br>Lui Grimmer</p></article><article class="contact-card"><h3>Gabe Ronquillo</h3><p>President, Yuba Ravens Fastpitch Softball<br><a href="tel:+15302377661">530-237-7661</a></p></article></div></div></div></section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><img class="footer-logo" src="yuba-ravens-logo.png" alt="Yuba Ravens Fastpitch"><div class="footer-copy"><strong>Yuba Ravens Fastpitch</strong><br>Yuba City · Olivehurst · Yuba-Sutter<br><a href="https://www.facebook.com/people/Yuba-Ravens/100093410423105/" target="_blank" rel="noopener">Follow us on Facebook</a><br><small>© 2026 Yuba Ravens Softball. All rights reserved.</small></div></div></footer>
+
+  <script>
+    const toggle=document.querySelector('.menu-toggle');const links=document.querySelector('.nav-links');toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',open);toggle.textContent=open?'×':'☰'});links.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'});
+  </script>
 </body>
 </html>
